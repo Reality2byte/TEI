@@ -5,13 +5,13 @@
   <desc versionDate="2024-03-16" xml:lang="en">indicates that the constructs referenced by its children occur in any order (i.e. are interleaved)</desc>
   <classes>
     <memberOf key="att.global"/>
-    <memberOf key="model.contentPart"/>
     <memberOf key="att.repeatable"/>
+    <memberOf key="model.contentPart"/>
   </classes>
   <content>
     <classRef key="model.contentPart" maxOccurs="unbounded"/>
   </content>
-  <constraintSpec ident="interleavechilden" scheme="schematron">
+  <constraintSpec ident="interleavechilden" scheme="schematron" xml:lang="en">
     <constraint>
       <sch:rule context="tei:interleave">
         <sch:assert test="count(*) gt 1">The interleave element must have at least two child elements</sch:assert>
