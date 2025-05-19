@@ -35,25 +35,26 @@
     mandatory <gi>persName</gi> element, zero or one of either
     <gi>placeName</gi> or <gi>location</gi>, and an optional
     <gi>note</gi> element, in any order.</p>
-    <!-- <p>To express this content model in the DTD language one might use
-    <eg xml:space="preserve"><![CDATA[ (   persName
- | ( persName, note )
- | ( persName, ( placeName | location ) ) 
- | ( note, persName )
- | ( ( placeName | location ), persName )
- | ( persName, note, ( placeName | location ) )
- | ( persName, ( placeName | location ), note )
- | ( note, persName, ( placeName | location ) )
- | ( note, ( placeName | location ), persName )
- | ( ( placeName | location ), note, persName )
- | ( ( placeName | location ), persName, note )
- )]]></eg></p> -->
+    <p>To express this content model in a DTD, the original schema
+    language for XML, one might use
+    <eg xml:space="preserve"><![CDATA[(   persName
+      | ( persName, note )
+      | ( persName, ( placeName | location ) ) 
+      | ( note, persName )
+      | ( ( placeName | location ), persName )
+      | ( persName, note, ( placeName | location ) )
+      | ( persName, ( placeName | location ), note )
+      | ( note, persName, ( placeName | location ) )
+      | ( note, ( placeName | location ), persName )
+      | ( ( placeName | location ), note, persName )
+      | ( ( placeName | location ), persName, note )
+    )]]></eg></p>
   </exemplum>
-  <remarks xml:lang="en" versionDate="2024-07-20">
-    <p>If a TEI description of an XML markup language (often referred
-    to as an <q>ODD</q>) makes use of this element, current processing
-    software will not be able to generate a DTD from it. For this reason
-    TEI P5 itself does not make use of <gi>interleave</gi> internally.</p>
+  <remarks xml:lang="en" versionDate="2025-05-18">
+    <p>If an ODD file makes use of this element, current processing
+    software will not be able to generate a DTD from it. For this
+    reason TEI P5 itself does not currently make use of
+    <gi>interleave</gi> internally.</p>
   </remarks>
   <listRef>
     <ptr target="#DEFCON" type="div2"/>
