@@ -62,7 +62,7 @@
 	  <desc versionDate="2008-04-06" xml:lang="es">el elemento contiene la indicación del capítulo (número y/o el título)</desc>
 	  <desc versionDate="2019-01-04" xml:lang="ja">章の識別子(番号やタイトル)を含む。</desc>
 	  <desc versionDate="2008-03-30" xml:lang="fr">l'élément contient une indication de chapitre (le numéro et/ou le titre)</desc>
-	  <desc versionDate="2007-11-06" xml:lang="it">l'elemento contiene un'indicazione di capitolo (numero e/o titolo.</desc>
+	  <desc versionDate="2007-11-06" xml:lang="it">l'elemento contiene un'indicazione di capitolo (numero e/o titolo).</desc>
 	</valItem>
 	<valItem ident="part">
 	  <desc versionDate="2012-12-17" xml:lang="en">the element identifies a part of a book or collection.</desc>

@@ -98,8 +98,7 @@
         <valItem ident="plev">
           <gloss versionDate="2007-07-04" xml:lang="en">preference level</gloss>
           <gloss versionDate="2007-12-20" xml:lang="ko">선호 층위</gloss>
-          <gloss versionDate="2007-06-12" xml:lang="fr">niveau d’usage (principalement, habituellement,
-            etc.)</gloss>
+          <gloss versionDate="2007-06-12" xml:lang="fr">niveau d’usage (principalement, habituellement, etc.)</gloss>
           <gloss versionDate="2007-11-06" xml:lang="it">livello di preferenza</gloss>
           <gloss versionDate="2007-05-04" xml:lang="es">nivel de preferencia (principal, habitual)</gloss>
           <desc versionDate="2007-06-27" xml:lang="en">preference level (chiefly, usually, etc.)</desc>
@@ -108,8 +107,7 @@
           <desc versionDate="2008-04-06" xml:lang="es">nivel de preferencia (principalmente, generalmente, etc.)</desc>
           <desc versionDate="2008-04-05" xml:lang="ja">使用度(主たる、通常、など)。</desc>
           <desc versionDate="2008-03-30" xml:lang="fr">niveau de sens (principal, courant, etc.)</desc>
-          <desc versionDate="2007-01-21" xml:lang="it">livello di preferenza (principalmente, di solito,
-            ecc.)</desc>
+          <desc versionDate="2007-01-21" xml:lang="it">livello di preferenza (principalmente, di solito, ecc.)</desc>
         </valItem>
         <valItem ident="lang">
           <gloss versionDate="2007-07-04" xml:lang="en">language</gloss>

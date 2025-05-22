@@ -143,7 +143,7 @@
         <!--	<valItem ident="&#x2103;"><gloss>degree Celsius</gloss><desc>SI unit of Celsius temperature</desc></valItem> -->
         <!--	<valItem ident="lm"><gloss>lumen</gloss><desc>SI unit of luminous flux</desc></valItem> -->
         <!--	<valItem ident="lx"><gloss>lux</gloss><desc>SI unit of illuminance</desc></valItem> -->
-        <!--	<valItem ident="Bq"><gloss>becquerel</gloss><desc>SI unit of activity (referred to a radionuclide</desc></valItem> -->
+        <!--	<valItem ident="Bq"><gloss>becquerel</gloss><desc>SI unit of activity (referred to a radionuclide)</desc></valItem> -->
         <!--	<valItem ident="Gy"><gloss>gray</gloss><desc>SI unit of absorbed dose or specific energy (imparted)</desc></valItem> -->
         <!--	<valItem ident="Sv"><gloss>sievert</gloss><desc>SI unit of dose equivalent, ambient dose equivalent, directional dose equivalent, personal dose equivalent, or organ equivalent dose</desc></valItem> -->
         <!-- selected non-SI units accepted for use with the International System -->
