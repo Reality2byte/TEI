@@ -23,7 +23,7 @@
       <desc versionDate="2008-04-05" xml:lang="ja">当該大きさの単位を示す。</desc>
       <desc versionDate="2007-06-12" xml:lang="fr">noms des unités utilisées pour la mesure.</desc>
       <desc versionDate="2007-05-04" xml:lang="es">especifica las unidades usadas para la medición.</desc>
-      <desc versionDate="2007-01-21" xml:lang="it">specifica le unità usate per la misurazione</desc>
+      <desc versionDate="2007-01-21" xml:lang="it">specifica le unità usate per la misurazione.</desc>
       <datatype><dataRef key="teidata.enumerated"/></datatype>
       <valList type="semi">
         <valItem ident="cm">
@@ -53,7 +53,7 @@
           <desc versionDate="2008-04-06" xml:lang="es">líneas de texto</desc>
           <desc versionDate="2008-04-05" xml:lang="ja">テキスト行</desc>
           <desc versionDate="2008-03-30" xml:lang="fr">lignes de texte</desc>
-          <desc versionDate="2007-11-06" xml:lang="it">righe di testo</desc>
+          <desc versionDate="2007-11-06" xml:lang="it">righe di testo.</desc>
         </valItem>
         <valItem ident="char">
           <gloss versionDate="2007-08-02" xml:lang="en">characters</gloss>
@@ -66,7 +66,7 @@
           <desc versionDate="2008-04-06" xml:lang="es">caracteres del texto</desc>
           <desc versionDate="2008-04-05" xml:lang="ja">文字列</desc>
           <desc versionDate="2008-03-30" xml:lang="fr">caractères du texte</desc>
-          <desc versionDate="2007-11-06" xml:lang="it">caratteri di testo</desc>
+          <desc versionDate="2007-11-06" xml:lang="it">caratteri di testo.</desc>
         </valItem>
       </valList>
     </attDef>
@@ -76,7 +76,7 @@
       <desc versionDate="2008-04-06" xml:lang="es">especifica la longitud en las unidades especificadas</desc>
       <desc versionDate="2008-04-05" xml:lang="ja">当該単位の大きさを示す。</desc>
       <desc versionDate="2008-03-30" xml:lang="fr">spécifie la longueur dans les unités indiquées</desc>
-      <desc versionDate="2007-11-06" xml:lang="it">specifica la lunghezza nelle unità indicate</desc>
+      <desc versionDate="2007-11-06" xml:lang="it">specifica la lunghezza nelle unità indicate.</desc>
       <datatype><dataRef key="teidata.numeric"/></datatype>
     </attDef>
     <attDef ident="extent" usage="opt">
