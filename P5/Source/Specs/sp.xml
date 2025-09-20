@@ -31,6 +31,16 @@
     <memberOf key="model.divPart"/>
   </classes>
   <content>
+    <alternate minOccurs="0" maxOccurs="unbounded">
+      <classRef key="model.stageLike"/>
+      <classRef key="model.global"/>
+      <classRef key="model.lLike"/>
+      <classRef key="model.pLike"/>
+      <classRef key="model.listLike"/>
+      <classRef key="model.attributable"/>
+      <elementRef key="speaker"/>
+      <elementRef key="q"/>
+    </alternate>
     <!--
         In RELAX NG compact syntax, using two extra pattern
         declarations:
@@ -53,6 +63,7 @@
          this you will find the same content model but using a class
          model.spPart (defined like spPart_sans, above), just to make
          updating easier. —Syd, 2025-09-02 -->
+    <!-- this is the section that was revised by issue 2317:
     <sequence>
       <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
       <sequence minOccurs="0" maxOccurs="unbounded">
@@ -103,6 +114,7 @@
         <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
       </sequence>
     </sequence>
+    -->
     <!-- BELOW -->
     <!--
         This is the same content model as above, but using the class
