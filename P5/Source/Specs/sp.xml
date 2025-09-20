@@ -39,6 +39,7 @@
       <classRef key="model.listLike"/>
       <classRef key="model.attributable"/>
       <elementRef key="speaker"/>
+      <elementRef key="lg"/>
       <elementRef key="q"/>
     </alternate>
     <!--
