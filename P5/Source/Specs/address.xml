@@ -22,12 +22,6 @@
     <memberOf key="model.divTopPart"/>
     <memberOf key="model.publicationStmtPart.detail"/>
   </classes>
-  <attList>
-    <attDef ident="role" usage="opt">
-      <desc versionDate="2025-11-26" xml:lang="en">may be used to specify further information about the purpose of the address, e.g. whether it is the address of a sender or a recipient within a correspondence.</desc>
-      <datatype maxOccurs="unbounded"><dataRef key="teidata.enumerated"/></datatype>
-    </attDef>
-  </attList>
   <content>
     <sequence>
       <classRef key="model.global" minOccurs="0" maxOccurs="unbounded"/>
@@ -37,6 +31,28 @@
       </sequence>
     </sequence>
   </content>
+  <attList>
+    <attDef ident="role" usage="opt">
+      <desc versionDate="2026-01-02" xml:lang="en">specifies further information about the purpose of the address.</desc>
+      <datatype maxOccurs="unbounded"><dataRef key="teidata.enumerated"/></datatype>
+      <valList type="open">
+	<valItem ident="sender"/>
+	<valItem ident="recipient"/>
+	<valItem ident="permanent"/>
+	<valItem ident="college"/>
+	<valItem ident="summer"/>
+      </valList>
+      <remarks xml:lang="en" versionDate="2026-01-02">
+	<p>Whereas <att>type</att> is used to differentiate the
+	kind of address (e.g. <val>postal</val>
+	vs. <val>street</val>), <att>role</att> is used to
+	differentiate the role of the address, for example within a
+	correspondence ecosystem (e.g. <val>sender</val>
+	vs. <val>recipient</val>, or <val>permanent</val>
+	vs.  <val>school</val> or <val>summer</val>).</p>
+      </remarks>
+    </attDef>
+  </attList>
   <exemplum xml:lang="en">
     <p>Using just the elements defined by the core module, an address could be represented as follows:</p>
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-address-egXML-rj" source="#NONE">
