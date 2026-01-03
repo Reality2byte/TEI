@@ -15,10 +15,7 @@
     <memberOf key="att.global"/>
   </classes>
   <content>
-    <sequence minOccurs="0">
-      <elementRef key="label"/>
-      <elementRef key="label" minOccurs="0"/>
-    </sequence>
+    <elementRef key="label" minOccurs="0" maxOccurs="2"/>
   </content>
   <attList>
     <attDef ident="from" usage="req">
@@ -76,7 +73,7 @@
     adjacency attributes can be used, but the resulting encoding would
     be highly redundant.</p>
     <p>Zero, one, or two children <gi>label</gi> elements may be
-    present. The first occurence of <gi>label</gi> provides a label
+    present. The first occurrence of <gi>label</gi> provides a label
     for the arc; the second provides a second label for the arc, and
     should be used if a transducer is being encoded.</p>
   </remarks>
