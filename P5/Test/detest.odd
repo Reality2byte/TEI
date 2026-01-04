@@ -801,7 +801,7 @@
               <p>Note that because this element is not a member of any
               model class nor in any other element’s content model, it
               will probably not show up in an output schema, which is
-              a good thing, becase defining an attribute twice like
+              a good thing, because defining an attribute twice like
               that is an error in at least RELAX NG and DTD.</p>
             </remarks>
           </elementSpec>
