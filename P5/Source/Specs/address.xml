@@ -51,8 +51,8 @@
           which mail should be sent via a public postal service.</desc>
         </valItem>
         <valItem ident="military">
-          <desc versionDate="2026-01-13" xml:lang="en">the address to
-          which deployed military personnel should be sent.</desc>
+          <desc versionDate="2026-01-15" xml:lang="en">the address to
+          which mail to deployed military personnel should be sent.</desc>
         </valItem>
         <valItem ident="physical">
           <desc versionDate="2026-01-13" xml:lang="en">the address of
@@ -77,6 +77,16 @@
         <valItem ident="recipient ">
           <desc versionDate="2026-01-13" xml:lang="en">the address of
           the intended recipient of a piece of correspondence.</desc>
+        </valItem>
+        <valItem ident="work">
+          <desc versionDate="2026-01-15" xml:lang="en">the address to
+          which work-related mail should be sent, typically that of
+          the recipient’s employer.</desc>
+        </valItem>
+        <valItem ident="home">
+          <desc versionDate="2026-01-15" xml:lang="en">the address to
+          which non-work-related mail should be sent, typically the
+          domicile of the recipient.</desc>
         </valItem>
         <valItem ident="start">
           <desc versionDate="2026-01-13" xml:lang="en">the address of
