@@ -63,9 +63,6 @@ les composants de cet élément sont à considérer comme formant une unité
 logique et doivent être traités dans l'ordre séquentiel</desc>
           <desc versionDate="2007-01-21" xml:lang="it">contenuto uniforme: i contenuti dell'elemento costituiscono un'unità logica che va elaborata in sequenza</desc>
         </valItem>
-        <valItem ident="unison">
-          <desc versionDate="2026-01-19" xml:lang="en">the contents of this element are intended to indicate agreement or harmony with each other.</desc>
-        </valItem>
       </valList>
     </attDef>
     <attDef ident="sample" usage="opt">
