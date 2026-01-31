@@ -764,8 +764,11 @@
       <!--L-->
 
       <bibl xml:id="RphCnd"><author>Lacy, M. Rophino</author>, <title level="m">Cinderella, 
-          Or the Fairy-Queen and the Glass Slipper: A Comic Opera, In Three Acts</title>. <pubPlace>London</pubPlace>: 
-          <publisher>Thomas Halles Lacy</publisher>, <date>1830</date>.</bibl>
+          Or the Fairy-Queen and the Glass Slipper: A Comic Opera, In Three Acts</title>.
+        <title level="s">Lacy's Acting Edition</title>, <biblScope unit="volume">volume 18</biblScope>:
+        <biblScope unit="number">No. 0262</biblScope>, <pubPlace>London</pubPlace>: 
+          <publisher>Thomas Hailes Lacy</publisher>, <biblScope unit="page">pp. 209–268</biblScope>. 
+        <date notBefore="1849">undated</date>.</bibl>
       <bibl xml:id="fr-ex-Lafayette-Cleves" xml:lang="fr"><author>La Fayette, Marie-Madeleine Pioche
           de La Vergne, comtesse de</author>, <title>La Princesse de Clèves</title>,
           <date>1678</date>.</bibl>
