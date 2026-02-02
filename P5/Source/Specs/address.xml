@@ -220,7 +220,7 @@
     postalische Addressen verwendet werden. Innerhalb des Elements
     kann das generische <gi>addrLine</gi>-Element als Alternative zu
     den spezielleren Elementen aus der <ident
-    type="class">model.addrPart</ident>-Klasse, wie<gi>street</gi>
+    type="class">model.addrPart</ident>-Klasse, wie <gi>street</gi>
     (Straße), <gi>postCode</gi> (Postleitzahl), etc. verwendet
     werden.</p>
   </remarks>
