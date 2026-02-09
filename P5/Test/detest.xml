@@ -464,7 +464,7 @@
         </floatingText> 
       </div>
       
-      <div n="should_be_invalid">
+      <div n="valid_per_issue_2317">
         <sp>
           <speaker/><speaker/>
         </sp>
