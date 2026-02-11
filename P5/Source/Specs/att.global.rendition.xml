@@ -130,9 +130,9 @@
         <p>If <att>rendition</att> is used to refer to a style
         definition in a formal language like CSS, it is recommended
         that it not be used in conjunction with <att>rend</att>.
-        Where both <att>rendition</att> and <att>rend</att> are
+        <!-- Where both <att>rendition</att> and <att>rend</att> are
         supplied, the latter is understood to override or complement
-        the former.</p>
+        the former. --></p>
         <p>Each URI provided should indicate a <gi>rendition</gi>
         element defining the intended rendition in terms of some
         appropriate style language, as indicated by the
