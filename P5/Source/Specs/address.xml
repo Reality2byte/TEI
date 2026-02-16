@@ -107,15 +107,14 @@
           taxi or delivery service.</desc>
         </valItem>
       </valList>
-      <remarks xml:lang="en" versionDate="2026-01-13">
+      <remarks xml:lang="en" versionDate="2026-02-16">
         <p>Whereas <att>type</att> is used to differentiate the kind
-        of address (e.g. <val>postal</val> vs. <val>street</val> or
-        <val>mailing</val> vs. <val>physical</val>), <att>role</att>
-        is used to differentiate the purpose of the address, for
-        example within a correspondence ecosystem
-        (e.g. <val>sender</val> vs. <val>recipient</val>, or
-        <val>permanent</val> vs. <val>school</val> or
-        <val>summer</val>).</p>
+        of address (e.g. a street address vs. a post office box, or a
+        physical address vs. a mailing address), <att>role</att> is
+        used to differentiate the purpose of the address, for example
+        within a correspondence ecosystem (e.g. the address of the
+        sender vs. that of the intended recipient, or a college
+        student's permanent address vs. address while at school).</p>
       </remarks>
     </attDef>
   </attList>
