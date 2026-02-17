@@ -45,7 +45,9 @@
             and <ref target="https://github.com/TEIC/TEI/pull/2790">PR #2790</ref>), 
             and it is now a member of <name type="class">att.canonical</name> and 
             <name type="class">att.typed</name>, providing it with new attributes <att>type</att>,
-            <att>subtype</att>, <att>key</att>, and <att>ref</att>.
+            <att>subtype</att>, <att>key</att>, and <att>ref</att> 
+            (<ref target="https://github.com/TEIC/TEI/issues/2459">#2459</ref>
+            and <ref target="https://github.com/TEIC/TEI/pull/2844">PR #2844</ref>).
           </item>
           <item>The <gi>spGrp</gi> element may now self-nest, and a new suggested value of "parallel" for the <att>org</att> 
             has been added to that element. New examples are provided in the Guidelines for 
@@ -69,6 +71,8 @@
             zero and a maximum of two <gi>label</gi> element children (<ref target="https://github.com/TEIC/TEI/issues/2761">#2761</ref> 
             and <ref target="https://github.com/TEIC/TEI/pull/2762">PR #2762</ref>).
           </item>
+          <item>A requirement of a <att>type</att> attribute on a nested <gi>standOff</gi> element has been removed because the 
+            the <gi>standoff</gi> element may not self-nest (<ref target="https://github.com/TEIC/TEI/pull/2769">PR #2769</ref>).</item>
         </list>
         <!--<list>
           <head>Changes to classes</head>
@@ -84,6 +88,12 @@
         following changes and may need to adapt their ODD files accordingly. 
         <list>
           <head>ODD-breaking change and deprecation</head>
+          <item>Previously the <att>name</att> attribute was used to specify a RelaxNG pattern on the <gi>attRef</gi> element, but
+            because <att>name</att> is not appropriately defined for such patterns, 
+            this release replaces the <att>name</att> attribute with the <att>key</att> attribute instead
+            (See <ref target="https://github.com/TEIC/TEI/issues/2282#issuecomment-3292757277">#2282 comment</ref>, 
+            <ref target="https://github.com/TEIC/TEI/issues/2850">#2850</ref>, 
+            and <ref target="https://github.com/TEIC/TEI/pull/2852">PR #2852</ref>).</item>
           <item>The <gi>dataRef</gi> element now requires one and only one of the attributes 
             <att>key</att>, <att>name</att>, or <att>ref</att> which had previously been defined as optional
             (<ref target="https://github.com/TEIC/TEI/issues/2838">#2838</ref> and 
@@ -98,6 +108,8 @@
       <p>
         <list>
           <head>Improvements of prose and examples</head>
+          <item>The explanation of the <att>role</att> attribute on the <gi>address</gi> element has been updated 
+            (<ref target="https://github.com/TEIC/TEI/pull/2870">PR #2870</ref>).</item>
           <item>Explanations of attributes with similar meanings in <name type="class">att.global.rendition</name>, 
             <name type="class">att.handFeatures</name>, <name type="class">att.linguistic</name>, and <name type="class">att.measurement</name>
             have been updated for clarity and disambiguation (<ref target="https://github.com/TEIC/TEI/issues/2744">#2744</ref> and 
@@ -115,6 +127,11 @@
         </list>
        <list>
           <head>Documentation</head>
+         <item>The Preface of TEI Guidelines (FM1) has been partially revised 
+           to provide a simple retrospective introduction to the origins of TEI P5 ( 
+           <ref target="https://github.com/TEIC/TEI/pull/2869">PR #2869</ref> and 
+           <ref target="https://github.com/TEIC/TEI/pull/2871">PR #2871</ref>, 
+           making a start on the larger revision tasks outlined in <ref target="https://github.com/TEIC/TEI/issues/2865">#2865</ref>).</item>
          <item>We have updated TCW 22 on the TEI Guidelines release procedure (Documentation <ref target="https://github.com/TEIC/Documentation/pull/20">#20</ref>
            and <ref target="https://github.com/TEIC/Documentation/pull/21">#21</ref>). 
            and TCW 31 on updating the p5subset.xml (Documentation <ref target="https://github.com/TEIC/Documentation/pull/28">#28</ref>).</item>
@@ -129,6 +146,8 @@
             and <ref target="https://github.com/TEIC/Stylesheets/pull/768">PR #768</ref>).</item>
           <item>The source of a persistent typo in the Guidelines-generated Documents has been identified and corrected 
             (<ref target="https://github.com/TEIC/TEI/issues/2714">#2714</ref>).</item>
+          <item>A few pointers that were missing leading hashmarks in their values were corrected 
+            (<ref target="https://github.com/TEIC/TEI/pull/2764">PR #2764</ref>).</item>
         </list>
       </p>
      <!-- STYLESHEETS-->
