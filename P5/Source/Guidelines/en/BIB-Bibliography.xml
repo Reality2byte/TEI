@@ -763,6 +763,12 @@
 
       <!--L-->
 
+      <bibl xml:id="RphCnd"><author>Lacy, M. Rophino</author>, <title level="m">Cinderella, 
+          Or the Fairy-Queen and the Glass Slipper: A Comic Opera, In Three Acts</title>.
+        <title level="s">Lacy's Acting Edition</title>, <biblScope unit="volume">volume 18</biblScope>:
+        <biblScope unit="number">No. 0262</biblScope>, <pubPlace>London</pubPlace>: 
+          <publisher>Thomas Hailes Lacy</publisher>, <biblScope unit="page">pp. 209–268</biblScope>. 
+        <date notBefore="1849">undated</date>.</bibl>
       <bibl xml:id="fr-ex-Lafayette-Cleves" xml:lang="fr"><author>La Fayette, Marie-Madeleine Pioche
           de La Vergne, comtesse de</author>, <title>La Princesse de Clèves</title>,
           <date>1678</date>.</bibl>
@@ -1221,9 +1227,13 @@
       <bibl xml:id="biblzh-tw_n35-36" xml:lang="zh-TW">莎士比亞，《馬克白》。</bibl>
       <bibl xml:id="SAWS"><title level="m">Sharing Ancient Wisdoms</title>, <date>2013</date>,
         available: <ptr target="http://www.ancientwisdoms.ac.uk/"/>.</bibl>
-      <bibl xml:id="DR-eg-08"><author>Shaw, George Bernard</author>. <title level="m">Heartbreak
-          House: a fantasia in the Russian manner on English themes</title> (<date>1919</date>). </bibl>
-      <bibl xml:id="DRSP-eg-35"><author>Shaw, George Bernard</author>. <title level="m">Pygmalion</title>, <date>1913</date>.</bibl>
+      <bibl xml:id="DR-eg-08"><author>Shaw, George Bernard</author>. <title level="a">Heartbreak
+          House: a fantasia in the Russian manner on English themes</title>, 
+        <title level="m">Heartbreak House, Great Catherine, and playlets of the war</title>. 
+        <pubPlace>London</pubPlace>: <publisher>Constable &amp; co.</publisher>, <date>1919</date>.</bibl>
+      <bibl xml:id="DRSP-eg-35"><author>Shaw, George Bernard</author>. <title level="a">Pygmalion</title>, 
+        <title level="m">Androcles and the Lion; Overruled; Pygmalion</title>.
+        <pubPlace>London</pubPlace>: <publisher>Constable &amp; co.</publisher>,  <date>1916</date>.</bibl>
       <bibl xml:id="SASE-eg-32"><author>Shields, David</author>. <title level="m">Dead
           Languages</title>, <publisher>HarperCollins Canada</publisher>/<publisher>Perennial
           Rack</publisher>, rpt. <date>1990</date>, <biblScope unit="pp">p.10</biblScope>.</bibl>
