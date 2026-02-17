@@ -58,26 +58,27 @@
           target="https://github.com/TEIC/TEI/issues/2695">#2695</ref>
           and <ref target="https://github.com/TEIC/TEI/pull/2866">PR
           #2866</ref>).</item>
-           <item>As a result of adding <gi>address</gi> to the classes that include <gi>div</gi>, 
+           <!-- item>As a result of adding <gi>address</gi> to the classes that include <gi>div</gi>, 
              the content model of <gi>post</gi> had to be modified
             to prevent ambiguity, as it would otherwise now include <gi>address</gi> as a member of 
             both <name type="class">model.phrase</name> and <name type="class">model.divBottom</name>. 
             We therefore changed <gi>post</gi> by removing <name type="class">model.divBottom</name> from the content model and
             instead specifying all of its elements except <gi>address</gi> to alternate 
             with those from <name type="class">model.phrase</name>.
-             (<ref target="https://github.com/TEIC/TEI/pull/2818">PR #2818</ref>).
-          </item>
+             (<ref target="https://github.com/TEIC/TEI/pull/2818">PR
+             #2818</ref>). 
+          </item -->
           <item>The <gi>entryFree</gi> element may now self-nest 
             (<ref target="https://github.com/TEIC/TEI/issues/2860">#2680</ref>).</item>
           <item>The content model of <gi>lem</gi> now permits the <gi>speaker</gi> element
             (<ref target="https://github.com/TEIC/TEI/issues/2316">#2316</ref> and 
             <ref target="https://github.com/TEIC/TEI/pull/2807">PR #2807</ref>).</item>
-          <item>The content models of <gi>arc</gi> and <gi>node</gi> have been simplified and clarified to permit a minimum of
+          <!-- item>The content models of <gi>arc</gi> and <gi>node</gi> have been simplified and clarified to permit a minimum of
             zero and a maximum of two <gi>label</gi> element children (<ref target="https://github.com/TEIC/TEI/issues/2761">#2761</ref> 
             and <ref target="https://github.com/TEIC/TEI/pull/2762">PR #2762</ref>).
-          </item>
+          </item -->
           <item>A requirement of a <att>type</att> attribute on a nested <gi>standOff</gi> element has been removed because the 
-            the <gi>standoff</gi> element may not self-nest (<ref target="https://github.com/TEIC/TEI/pull/2769">PR #2769</ref>).</item>
+            the <gi>standOff</gi> element may not self-nest (<ref target="https://github.com/TEIC/TEI/pull/2769">PR #2769</ref>).</item>
         </list>
         <!--<list>
           <head>Changes to classes</head>
@@ -88,14 +89,14 @@
         <item></item>
         </list>-->
       </p>
-      <p>The following change introduced with this release could invalidate ODD customizations in
+      <p>The following changes introduced with this release could invalidate ODD customizations in
         TEI projects. Those maintaining ODD customizations of the TEI should be aware of the
         following changes and may need to adapt their ODD files accordingly. 
         <list>
-          <head>ODD-breaking change and deprecation</head>
+          <head>ODD-breaking changes and deprecations</head>
           <item>The <att>name</att> attributes has been used to specify a RelaxNG pattern on the <gi>attRef</gi> element, but
             this usage is now deprecated because <att>name</att> is not appropriately defined for such patterns. 
-            This release replaces the <att>name</att> attribute with the <att>key</att> attribute instead
+            Thus this release replaces the <att>name</att> attribute with the <att>key</att> attribute instead
             (See <ref target="https://github.com/TEIC/TEI/issues/2282#issuecomment-3292757277">#2282 comment</ref>, 
             <ref target="https://github.com/TEIC/TEI/issues/2850">#2850</ref>, 
             and <ref target="https://github.com/TEIC/TEI/pull/2852">PR #2852</ref>).</item>
@@ -103,7 +104,7 @@
             <att>key</att>, <att>name</att>, or <att>ref</att> which had previously been defined as optional
             (<ref target="https://github.com/TEIC/TEI/issues/2838">#2838</ref> and 
             <ref target="https://github.com/TEIC/TEI/pull/2839">PR #2839</ref>).</item>
-         <item>A new Schematron constraint now checks an <gi>attList</gi> and flags as an error
+         <item>A new Schematron constraint now checks each <gi>attList</gi> and flags as an error
            the presence of multiple <gi>attDef</gi> elements within it with the same <att>ident</att>.
            (<ref target="https://github.com/TEIC/TEI/issues/2371">#2371</ref> and 
            <ref target="https://github.com/TEIC/TEI/pull/2534">PR #2534</ref>).
@@ -113,12 +114,22 @@
       <p>
         <list>
           <head>Improvements of prose and examples</head>
-          <item>The explanation of the <att>role</att> attribute on the <gi>address</gi> element has been updated 
-            (<ref target="https://github.com/TEIC/TEI/pull/2870">PR #2870</ref>).</item>
-          <item>Explanations of attributes with similar meanings in <name type="class">att.global.rendition</name>, 
-            <name type="class">att.handFeatures</name>, <name type="class">att.linguistic</name>, and <name type="class">att.measurement</name>
-            have been updated for clarity and disambiguation (<ref target="https://github.com/TEIC/TEI/issues/2744">#2744</ref> and 
-            <ref target="https://github.com/TEIC/TEI/pull/2853">PR #2853</ref>).</item>
+          <item>Explanations of attributes with similar meanings in
+          <name type="class">att.global.rendition</name>, <name
+          type="class">att.handFeatures</name>, <name
+          type="class">att.linguistic</name>, and <name
+          type="class">att.measurement</name> have been updated for
+          clarity and disambiguation. One significant sequela of this
+          change is that the Guidelines no longer assert that
+          <quote>Where both <att>rendition</att> and <att>rend</att>
+          are supplied, the latter is understood to override or
+          complement the former.</quote>. Thus a project that wishes
+          to retain this relationship between <att>rend</att> and
+          <att>rendition</att> heretofore should explicitly document
+          that relationship, probably in their ODD file. (<ref
+          target="https://github.com/TEIC/TEI/issues/2744">#2744</ref>
+          and <ref target="https://github.com/TEIC/TEI/pull/2853">PR
+          #2853</ref>).</item>
           <item>An example of <gi>eventName</gi> in the
             <ref target="https://tei-c.org/Vault/P5/4.11.0/doc/tei-p5-doc/en/html/ND.html">Names, Dates, People, and Places chapter</ref>
             has been updated (<ref target="https://github.com/TEIC/TEI/pull/2834">PR #2834</ref>).
@@ -138,14 +149,14 @@
            <ref target="https://github.com/TEIC/TEI/pull/2871">PR #2871</ref>, 
            making a start on the larger revision tasks outlined in <ref target="https://github.com/TEIC/TEI/issues/2865">#2865</ref>).</item>
          <item>We have updated TCW 22 on the TEI Guidelines release procedure (Documentation <ref target="https://github.com/TEIC/Documentation/pull/20">#20</ref>
-           and <ref target="https://github.com/TEIC/Documentation/pull/21">#21</ref>). 
-           and TCW 31 on updating the p5subset.xml (Documentation <ref target="https://github.com/TEIC/Documentation/pull/28">#28</ref>).</item>
+           and <ref target="https://github.com/TEIC/Documentation/pull/21">#21</ref>)
+           and TCW 31 on updating the p5subset.xml. (Documentation <ref target="https://github.com/TEIC/Documentation/pull/28">#28</ref>).</item>
         </list>
         <list>
           <head>Housekeeping</head>
            <item>The testing suite for the Guidelines now includes more verbose messaging to help improve
              debugging (<ref target="https://github.com/TEIC/TEI/pull/2819">PR #2819</ref>).</item>
-          <item>The Makefile for the Stylesheets testing suite has been edited to improve the testing process and documentation 
+          <item>The Makefile for the Stylesheets testing suite has been updated to improve the testing process and documentation 
             (<ref target="https://github.com/TEIC/Stylesheets/pull/788">Stylesheets #PR 788</ref> and 
             <ref target="https://github.com/TEIC/Stylesheets/pull/793">PR #793</ref>), and a superfluous
             test file has been identified and removed (<ref target="https://github.com/TEIC/Stylesheets/issues/438">Stylesheets #438</ref> 
