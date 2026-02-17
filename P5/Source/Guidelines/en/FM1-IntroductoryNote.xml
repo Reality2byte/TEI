@@ -4,20 +4,29 @@
 <div xmlns="http://www.tei-c.org/ns/1.0" xml:id="FM1">
   <head>Preface and Acknowledgments</head>
 
-  <p>Since its origins in a snowy conference meeting in November 1987 at Vassar College in Poughkeepsie, New York, 
-    the Text Encoding Initiative (TEI) has worked together as an international community sharing in the ideation,
-    planning, and drafting of Guidelines for encoding of human- and machine-readable electronic documents. Early versions
-    of the TEI developed thanks to the combined efforts of editors C. Michael Sperberg-McQueen and Lou Burnard with working 
-    groups in the 1990s and 2000s.</p>
+  <p>Since its origins in a snowy conference meeting in November 1987
+  at Vassar College in Poughkeepsie, New York, the Text Encoding
+  Initiative (TEI) has worked together as an international community
+  sharing in the conceptualization and drafting of guidelines for
+  encoding of human- and machine-readable electronic documents. Early
+  versions of the TEI developed thanks to the combined efforts of
+  editors C. Michael Sperberg-McQueen and Lou Burnard along with
+  dozens of dedicated individuals organized as working groups in the
+  1990s and 2000s.</p>
     
-  <p>By 2005, the TEI as an organization developed a Technical Council to assist with continued 
-    development and maintainance of the Guidelines, responding to TEI community and supporting workgroups, task forces, and 
-    special interest groups. The fifth distinct version of the TEI, called P5 and released on 2 November 2007, 
-    was the happy result of six years of combined efforts of Editors Lou Burnard and Syd Bauman together with
-    the Technical Council, elected by the TEI community and charged with
-    the ongoing maintenance and development of those Guidelines as an open-source project.</p>
+  <p>When the TEI was re-organized from a grant-funded project to an
+  international consortium in 2001, a Technical Council was formed to
+  assist with continued development and maintainance of the
+  Guidelines, responding to the TEI community and supporting
+  workgroups, task forces, and special interest groups. The fifth
+  distinct version of the TEI, called P5 and released on 2 November
+  2007, was the happy result of six years of combined efforts of
+  Editors Lou Burnard and Syd Bauman together with Sebastian Rahtz and
+  the Technical Council, elected by the TEI community and charged with
+  the ongoing maintenance and development of those Guidelines as an
+  open-source project.</p>
   
-    <p>While TEI P5 has been remarkably durable, it has survived and flourished 
+    <p>TEI P5 has been remarkably durable: it has survived and flourished 
     through several infrastructure transitions and expanded in many 
     new directions. The success of P5 can be seen in its incorporation of methods for standoff annotation; 
     community activity supporting internationalization of glosses, descriptions, and examples;
@@ -32,6 +41,8 @@
     
   <list>
     <head>Board Chair</head>
+    <item>2001–2003: John Unsworth (University of Virginia / University of Illinois at Urbana-Champaign)</item>
+    <item>2003–2004: Harold Short (King’s College London)</item>
     <item>2004–2005: Julia Flanders (Brown University)</item>
     <item>2006: Matthew Zimmerman (New York University)</item>
     <item>2007–2011: Daniel O’Donnell (University of Lethbridge)</item>
