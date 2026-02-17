@@ -31,17 +31,26 @@
         of the issues resolved in the course of this release cycle may be found under the <ref
           target="https://github.com/TEIC/TEI/milestone/21?closed=1">4.11.0 milestone</ref>. Many
         thanks to the community contributors who reported issues, sent bug fixes, and helped with
-        the drafting that led to this release, including: John Bampton, Gabriel Egan, Julia Martin,
-        Klaus Rettinghaus, GitHub user rvdb, <!-- ??? -->.</p>
+        the drafting that led to this release, including: John Bampton, Lou Burnard, Stefan Dumont, 
+        Gabriel Egan, Julia Martin, Klaus Rettinghaus, GitHub user rvdb, <!-- ??? -->.</p>
       <p>The following changes are particularly worth highlighting in this release: 
         <!--<list>
           <head>New encoding features</head>
         </list>-->
         <list>
           <head>Changes to content models and classes</head>
-          <item>The <gi>address</gi> element is now permitted inside <gi>div</gi> 
+          <item>The <gi>address</gi> element is significantly updated with this release: 
+            <gi>address</gi> is now permitted inside <gi>div</gi> 
             (<ref target="https://github.com/TEIC/TEI/issues/2460">#2460</ref> 
-            and <ref target="https://github.com/TEIC/TEI/pull/2790">PR #2790</ref>).</item>
+            and <ref target="https://github.com/TEIC/TEI/pull/2790">PR #2790</ref>), 
+            and it is now a member of <name type="class">att.canonical</name> and 
+            <name type="class">att.typed</name>, providing it with new attributes <att>type</att>,
+            <att>subtype</att>, <att>key</att>, and <att>ref</att>.
+          </item>
+          <item>The <gi>spGrp</gi> element may now self-nest, and a new suggested value of "parallel" for the <att>org</att> 
+            has been added to that element. New examples are provided in the Guidelines for 
+            encoding simultaneous speaking in performance texts (<ref target="https://github.com/TEIC/TEI/issues/2695">#2695</ref> 
+            and <ref target="https://github.com/TEIC/TEI/pull/2866">PR #2866</ref>).</item>
            <item>As a result of adding <gi>address</gi> to the classes that include <gi>div</gi>, 
              the content model of <gi>post</gi> had to be modified
             to prevent ambiguity, as it would otherwise now include <gi>address</gi> as a member of 
@@ -89,6 +98,10 @@
       <p>
         <list>
           <head>Improvements of prose and examples</head>
+          <item>Explanations of attributes with similar meanings in <name type="class">att.global.rendition</name>, 
+            <name type="class">att.handFeatures</name>, <name type="class">att.linguistic</name>, and <name type="class">att.measurement</name>
+            have been updated for clarity and disambiguation (<ref target="https://github.com/TEIC/TEI/issues/2744">#2744</ref> and 
+            <ref target="https://github.com/TEIC/TEI/pull/2853">PR #2853</ref>).</item>
           <item>An example of <gi>eventName</gi> in the
             <ref target="https://tei-c.org/Vault/P5/4.11.0/doc/tei-p5-doc/en/html/ND.html">Names, Dates, People, and Places chapter</ref>
             has been updated (<ref target="https://github.com/TEIC/TEI/pull/2834">PR #2834</ref>).
