@@ -144,8 +144,7 @@
        <list>
           <head>Documentation</head>
          <item>The Preface of TEI Guidelines (FM1) has been partially revised 
-           to provide a simple retrospective introduction to the origins of TEI P5 ( 
-           <ref target="https://github.com/TEIC/TEI/pull/2869">PR #2869</ref> and 
+           to provide a simple retrospective introduction to the origins of TEI P5 (<ref target="https://github.com/TEIC/TEI/pull/2869">PR #2869</ref> and 
            <ref target="https://github.com/TEIC/TEI/pull/2871">PR #2871</ref>, 
            making a start on the larger revision tasks outlined in <ref target="https://github.com/TEIC/TEI/issues/2865">#2865</ref>).</item>
          <item>We have updated TCW 22 on the TEI Guidelines release procedure (Documentation <ref target="https://github.com/TEIC/Documentation/pull/20">#20</ref>
