@@ -24,7 +24,7 @@
   <text>
     <body>
       <p>Release 4.11.0 is codenamed <q>The Paperclip Release</q>.
-        <!-- ??? --></p>
+        The paperclip resistance was a symbolic act during World War II where Norwegians wore paperclips on their clothing to defy the Nazi occupation and show unity, and it has been recently revived as a symbol of peaceful act of protest.  For more information, see <ref target="https://thepaperclipresistance.com/history/">here</ref>.</p>
       <p>This release introduces new features and resolves a number of issues raised by the TEI
         community. The majority of these changes and corrections are a consequence of feature
         requests or bugs reported by the TEI community using the GitHub tracking system. A full list
