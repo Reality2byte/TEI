@@ -58,27 +58,27 @@
           target="https://github.com/TEIC/TEI/issues/2695">#2695</ref>
           and <ref target="https://github.com/TEIC/TEI/pull/2866">PR
           #2866</ref>).</item>
-           <!-- item>As a result of adding <gi>address</gi> to the classes that include <gi>div</gi>, 
-             the content model of <gi>post</gi> had to be modified
-            to prevent ambiguity, as it would otherwise now include <gi>address</gi> as a member of 
-            both <name type="class">model.phrase</name> and <name type="class">model.divBottom</name>. 
-            We therefore changed <gi>post</gi> by removing <name type="class">model.divBottom</name> from the content model and
-            instead specifying all of its elements except <gi>address</gi> to alternate 
-            with those from <name type="class">model.phrase</name>.
-             (<ref target="https://github.com/TEIC/TEI/pull/2818">PR
-             #2818</ref>). 
-          </item -->
           <item>The <gi>entryFree</gi> element may now self-nest 
             (<ref target="https://github.com/TEIC/TEI/issues/2860">#2860</ref>).</item>
           <item>The content model of <gi>lem</gi> now permits the <gi>speaker</gi> element
             (<ref target="https://github.com/TEIC/TEI/issues/2316">#2316</ref> and 
             <ref target="https://github.com/TEIC/TEI/pull/2807">PR #2807</ref>).</item>
-          <!-- item>The content models of <gi>arc</gi> and <gi>node</gi> have been simplified and clarified to permit a minimum of
+          <item>The content models of <gi>arc</gi> and <gi>node</gi> have been simplified and clarified to permit a minimum of
             zero and a maximum of two <gi>label</gi> element children (<ref target="https://github.com/TEIC/TEI/issues/2761">#2761</ref> 
             and <ref target="https://github.com/TEIC/TEI/pull/2762">PR #2762</ref>).
-          </item -->
+          </item>
           <item>A requirement of a <att>type</att> attribute on a nested <gi>standOff</gi> element has been removed because the 
             the <gi>standOff</gi> element may not self-nest (<ref target="https://github.com/TEIC/TEI/pull/2769">PR #2769</ref>).</item>
+          <item>With this release, the content model of <gi>post</gi> has been modified slightly to prevent
+            ambiguity due to the changes introduced in the class membership of <gi>address</gi> (<ref target="https://github.com/TEIC/TEI/pull/2818">PR
+              #2818</ref>).  <!-- Longer explanation: As a result of adding <gi>address</gi> to the classes that include <gi>div</gi>, 
+             the content model of <gi>post</gi> had to be modified
+            to prevent ambiguity, as it would otherwise now include <gi>address</gi> as a member of 
+            both <name type="class">model.phrase</name> and <name type="class">model.divBottom</name>. 
+            We therefore changed <gi>post</gi> by removing <name type="class">model.divBottom</name> from the content model and
+            instead specifying all of its elements except <gi>address</gi> to alternate 
+            with those from <name type="class">model.phrase</name>.-->
+          </item>
         </list>
         <!--<list>
           <head>Changes to classes</head>
@@ -115,17 +115,17 @@
         <list>
           <head>Improvements of prose and examples</head>
           <item>Explanations of attributes with similar meanings in
-          <name type="class">att.global.rendition</name>, <name
-          type="class">att.handFeatures</name>, <name
-          type="class">att.linguistic</name>, and <name
-          type="class">att.measurement</name> have been updated for
-          clarity and disambiguation. One significant sequela of this
-          change is that the Guidelines no longer assert that
+          <name type="class">att.global.rendition</name>, 
+          <name type="class">att.handFeatures</name>, 
+          <name type="class">att.linguistic</name>, 
+          and <name type="class">att.measurement</name> have been updated for
+          clarity and disambiguation. As a result of this change, 
+          the Guidelines no longer assert that
           <quote>Where both <att>rendition</att> and <att>rend</att>
           are supplied, the latter is understood to override or
-          complement the former.</quote>. Thus a project that wishes
+          complement the former.</quote>. Thus a project that now wishes
           to retain this relationship between <att>rend</att> and
-          <att>rendition</att> heretofore should explicitly document
+          <att>rendition</att> should explicitly document
           that relationship, probably in their ODD file. (<ref
           target="https://github.com/TEIC/TEI/issues/2744">#2744</ref>
           and <ref target="https://github.com/TEIC/TEI/pull/2853">PR
