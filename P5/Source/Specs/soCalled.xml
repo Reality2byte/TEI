@@ -4,6 +4,7 @@
 <elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="core" xml:id="gi-soCalled" ident="soCalled">
   <gloss versionDate="2020-12-20" xml:lang="en">so called</gloss>
   <gloss versionDate="2026-03-26" xml:lang="de">sogenannt</gloss>
+  <gloss versionDate="2026-03-26" xml:lang="it">cosiddetto</gloss>
   <desc versionDate="2005-01-14" xml:lang="en">contains a word or phrase for which the author or narrator indicates a disclaiming of
     responsibility, for example by the use of scare quotes or italics.</desc>
   <desc versionDate="2026-03-26" xml:lang="de">enthält ein Wort oder eine Phrase, für die der Autor oder Erzähler einen Haftungsausschluss anzeigt,
