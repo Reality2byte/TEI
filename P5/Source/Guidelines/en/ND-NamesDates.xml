@@ -956,6 +956,13 @@ target="#CONA"/>).  The tag -->The
           <specDesc key="personGrp"/>
         </specList></p>
 
+      <p>The <gi>person</gi> element is a member of the class <ident type="class">att.datable</ident>, which provides attributes for normalization of elements that contain dates, times, or datable events: 
+        <specList>
+          <specDesc key="att.datable.custom" atts="when-custom notBefore-custom notAfter-custom from-custom to-custom datingPoint datingMethod"/>
+          <specDesc key="att.datable.iso" atts="when-iso notBefore-iso notAfter-iso from-iso to-iso"/>
+          <specDesc key="att.datable.w3c" atts="when notBefore notAfter from to"/>
+        </specList></p>
+
       <p>These attributes are intended for use where only a small amount of data is to be encoded in a more or less normalized
         form, possibly for many person elements, for example when encoding basic facts about respondents to a questionnaire. When
         however a more detailed encoding is required for all kinds of information about a person, for example in a historical
