@@ -954,7 +954,7 @@ target="#CONA"/>).  The tag -->The
           <specDesc key="att.global.source" atts="source"/>
         </specList> </p>
       
-      <p>The <gi>person</gi> element is also a member of the class <ident type="class">att.datable</ident>, which provides attributes for normalization of elements that contain dates, times, or datable events: 
+      <p>As a member of the class <ident type="class">att.datable</ident>, the <gi>person</gi> element also provides attributes for normalization of elements that contain dates, times, or datable events: 
         <specList>
           <specDesc key="att.datable.custom" atts="when-custom notBefore-custom notAfter-custom from-custom to-custom datingPoint datingMethod"/>
           <specDesc key="att.datable.iso" atts="when-iso notBefore-iso notAfter-iso from-iso to-iso"/>
