@@ -1009,7 +1009,7 @@ target="#CONA"/>).  The tag -->The
         one for events. Each class may contain specific elements for common types of biographical information, and contains a
         generic element for other, user-defined, types of information.</p>
       <p>All the elements in these three classes also belong to the attribute class <ident type="class">att.datable</ident>
-        as discussed in <ptr target="#NDATTS"/> above.</p>
+        which is discussed in <ptr target="#NDATTS"/> above.</p>
 
       <div type="div4" xml:id="NDPERSEpc">
         <head>Personal Characteristics</head>
