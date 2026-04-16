@@ -22,7 +22,7 @@
       <desc versionDate="2009-05-28" xml:lang="fr">indique les unités de mesure utilisées ; il s'agit en général du symbole normalisé pour les unités dont on a besoin.</desc>
       <desc versionDate="2007-05-04" xml:lang="es">indica las unidades usadas para la medición, normalmente utilizando el símbolo estándard para la unidad de medición en cuestión.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">indica le unità impiegate per la misurazione, generalmente utilizzando il simbolo standard per l'unità di misura in questione</desc>
-      <desc versionDate="2026-04-15" xml:lang="de">gibt die verwendeten Einheiten an, in der Regel das Standardsymbol für die Messeinheit, die gewünscht ist.</desc>
+      <desc versionDate="2026-04-15" xml:lang="de">gibt die verwendeten Einheiten an, in der Regel das jeweilige Standardsymbol der gewünschten Messeinheiten.</desc>
       <datatype><dataRef key="teidata.enumerated"/></datatype>
       <valList type="semi">
         <!-- base SI units -->
