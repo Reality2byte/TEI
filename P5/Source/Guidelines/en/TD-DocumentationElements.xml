@@ -624,7 +624,10 @@ to mark any technical term, thus:
       </specList>
       Note, however, that current ODD processing software will
       not be able to convert a content model that uses <gi>interleave</gi>
-      to a DTD.</p>
+      to a DTD. These <title>Guidelines</title> recommend against
+      using <gi>interleave</gi> when generating XSD schemas, as not
+      all cases of interleave can be expressed in XSD (especially
+      those that are likely to be the most useful).</p>
       <p>These three wrapper elements are also members of <ident
       type="class">att.repeatable</ident>. References listed as
       children of <gi>sequence</gi> must appear in the order and
