@@ -2500,8 +2500,8 @@ represent the complete speech attributed to each voice:
 <p>Note the use of the <gi>desc</gi> child element within the two
 <gi>join</gi>s making up the <gi>q</gi> element here. These enable us
 to  document the speakers of the two virtual <gi>q</gi> elements
-represented by the <gi>join</gi> elements; this is necessary because the
-there is no  way of specifying the attributes
+represented by the <gi>join</gi> elements; this is necessary because 
+there is no way of specifying the attributes
 to be associated with a virtual element, in particular there is no way
 to specify a
 <att>who</att> value for them.</p>
