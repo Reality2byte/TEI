@@ -42,7 +42,7 @@
       <desc versionDate="2008-12-09" xml:lang="fr">précise le rôle joué par ce groupe de personnes dans l'interaction.</desc>
       <desc versionDate="2007-05-04" xml:lang="es">especifica el role de ese grupo de participantes en la interacción.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">specifica il ruolo del gruppo di partecipanti all'interazione</desc>
-      <datatype><dataRef key="teidata.enumerated"/></datatype>
+      <datatype maxOccurs="unbounded"><dataRef key="teidata.enumerated"/></datatype>
 
 <remarks versionDate="2013-12-21" xml:lang="en">
         <p>Values for this attribute may be locally defined by a
