@@ -22,15 +22,11 @@
   </classes>
   <content>
     <alternate>
-      
-        <classRef key="model.pLike" minOccurs="1" maxOccurs="unbounded"/>
-      
-      
-        <alternate minOccurs="0" maxOccurs="unbounded">
-          <classRef key="model.personPart"/>
-          <classRef key="model.global"/>
-        </alternate>
-      
+      <classRef key="model.pLike" minOccurs="1" maxOccurs="unbounded"/>
+      <alternate minOccurs="0" maxOccurs="unbounded">
+        <classRef key="model.personPart"/>
+        <classRef key="model.global"/>
+      </alternate>
     </alternate>
   </content>
   <attList>
@@ -42,16 +38,14 @@
       <desc versionDate="2008-12-09" xml:lang="fr">précise le rôle joué par ce groupe de personnes dans l'interaction.</desc>
       <desc versionDate="2007-05-04" xml:lang="es">especifica el role de ese grupo de participantes en la interacción.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">specifica il ruolo del gruppo di partecipanti all'interazione.</desc>
-      <datatype><dataRef key="teidata.enumerated"/></datatype>
-
-<remarks versionDate="2013-12-21" xml:lang="en">
+      <datatype maxOccurs="unbounded"><dataRef key="teidata.enumerated"/></datatype>
+      <remarks versionDate="2013-12-21" xml:lang="en">
         <p>Values for this attribute may be locally defined by a
-	project, using arbitrary keywords such as <val>movement</val>,
-	<val>employers</val>, <val>relatives</val>, or
-	<val>servants</val>, each of which should be associated with a
-	definition. Such local definitions will typically be provided by a
-	<gi>valList</gi> element in the project schema
-specification.</p></remarks>
+        project, using arbitrary keywords such as <val>movement</val>,
+        <val>employers</val>, <val>relatives</val>, or
+        <val>servants</val>, each of which should be associated with a
+        definition. Such local definitions will typically be provided by a
+        <gi>valList</gi> element in the project schema specification.</p></remarks>
     </attDef>
     <attDef ident="sex" usage="opt">
       <desc versionDate="2005-01-14" xml:lang="en">specifies the sex of the participant group.</desc>
@@ -82,14 +76,13 @@ specification.</p></remarks>
       <desc versionDate="2007-05-04" xml:lang="es">especifica el intervalo de edad del grupo de partecipantes.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">indica la fascia di età del gruppo di partecipanti.</desc>
       <datatype><dataRef key="teidata.enumerated"/></datatype>
-<remarks versionDate="2013-12-21" xml:lang="en">
+      <remarks versionDate="2013-12-21" xml:lang="en">
         <p>Values for this attribute may be locally defined by a
-	project, using arbitrary keywords such as <val>infant</val>,
-	<val>child</val>, <val>teen</val>, <val>adult</val>, or
-	<val>senior</val>, each of which should be associated with a
-	definition. Such local definitions will typically be provided by a
-	<gi>valList</gi> element in the project schema
-specification.</p></remarks>
+        project, using arbitrary keywords such as <val>infant</val>,
+        <val>child</val>, <val>teen</val>, <val>adult</val>, or
+        <val>senior</val>, each of which should be associated with a
+        definition. Such local definitions will typically be provided by a
+        <gi>valList</gi> element in the project schema specification.</p></remarks>
     </attDef>
     <attDef ident="size" usage="opt">
       <desc versionDate="2013-12-21" xml:lang="en">describes
