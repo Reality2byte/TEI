@@ -13,25 +13,27 @@
     <memberOf key="att.combinable"/>
   </classes>
   <constraintSpec ident="spec-in-module" scheme="schematron" xml:lang="en">
+    <!--
+      The @test below comprises three expressions in a disjunction.
+      Only if all three are false() is the error message generated;
+      i.e., if any one of the three is true() no message is
+      generated. The first two test for whether or not we are in a
+      circumstance in which the basic question, “does the module
+      @module exist?” can be meaningfully asked. The sub-tests are:
+      1) This specification element (which has a @module attr) is free-standing; i.e. it is NOT a descendant of <schemaSpec>, <TEI>, nor of <teiCorpus> — this is TRUE for the individual files in which we store the TEI P5 specifications, but false for p5.xml (or p5subset.xml) itself, and false for any proper customization file.
+      2) There are no <moduleSpec> nor <moduleRef> elements in this file.
+      3) In this file there is either a <moduleSpec>’s @ident or a <moduleRef>’s @key which matches this specification’s @module.
+    -->
     <constraint>
       <sch:rule context="tei:elementSpec[ @module ]
                         |tei:classSpec[ @module ]
                         |tei:macroSpec[ @module ] ">
         <sch:assert test="( not( ancestor::tei:schemaSpec | ancestor::tei:TEI | ancestor::tei:teiCorpus ) )
                           or
-                          (
-                            not( @module )
-                            or
-                            (
-                              not( //tei:moduleSpec )
-                              and
-                              not( //tei:moduleRef )
-                            )
-                            or
-                            ( //tei:moduleSpec[ @ident = current()/@module ] )
-                            or
-                            ( //tei:moduleRef[ @key = current()/@module ] )
-                          )">
+                          not( //tei:moduleSpec | //tei:moduleRef )
+                          or
+                          ( //tei:moduleSpec/@ident | //tei:moduleRef/@key ) = current()/@module
+                          ">
         Specification <sch:value-of select="@ident"/>: the value of
         the module attribute ("<sch:value-of select="@module"/>")
         should correspond to an existing module, via a moduleSpec or
