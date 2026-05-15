@@ -40,7 +40,7 @@
         <sch:assert test="( //tei:moduleSpec/@ident | //tei:moduleRef/@key ) = @module">
           Specification <sch:value-of select="@ident"/>: the value of the module attribute
           ("<sch:value-of select="@module"/>") should correspond to an existing module, via
-          a moduleSpec or moduleRef</sch:assert>
+          a moduleSpec or moduleRef.</sch:assert>
       </sch:rule>
     </constraint>
   </constraintSpec>
