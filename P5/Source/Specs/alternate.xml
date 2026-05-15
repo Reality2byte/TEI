@@ -18,7 +18,7 @@
   <constraintSpec ident="alternatechilden" scheme="schematron" xml:lang="en">
     <constraint>
       <sch:rule context="tei:alternate">
-        <sch:assert test="count(*) gt 1">The alternate element must have at least two child elements</sch:assert>
+        <sch:assert test="count(*) gt 1">The alternate element must have at least two child elements.</sch:assert>
       </sch:rule>
     </constraint>
   </constraintSpec>

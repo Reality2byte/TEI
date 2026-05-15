@@ -26,7 +26,7 @@
                                   and
                                   $srcs[2]">
               When used on a schema description element (like
-              <sch:value-of select="name(.)"/>), the @source attribute
+              &lt;<sch:value-of select="name(.)"/>>), the @source attribute
               should have only 1 value. (This one has <sch:value-of
                 select="count($srcs)"/>.)
             </sch:report>
