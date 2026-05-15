@@ -20,7 +20,7 @@
       elsewhere, so would not be in this file, anyway. So we test that
       the @module is either
       1) in a file that has at least a <schemaSpec>, if not a <TEI>
-         (or <teiCorpus); or
+         (or <teiCorpus); and
       2) in a file that has at least one <moduleSpec> or <moduleRef>,
          because if there are no <moduleSpec>s nor <moduleRef>s, there
          cannot be one that is refered to by this @module attribute.
