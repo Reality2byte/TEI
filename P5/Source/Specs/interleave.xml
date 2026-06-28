@@ -9,7 +9,7 @@
     <memberOf key="model.contentPart"/>
   </classes>
   <content>
-    <classRef key="model.contentPart" maxOccurs="unbounded"/>
+    <classRef key="model.contentPart" minOccurs="1" maxOccurs="unbounded"/>
   </content>
   <constraintSpec ident="interleavechilden" scheme="schematron" xml:lang="en">
     <constraint>
@@ -24,8 +24,8 @@
         <interleave>
           <elementRef key="persName"/>
           <alternate minOccurs="0">
-              <elementRef key="placeName"/>
-              <elementRef key="location"/>
+            <elementRef key="placeName"/>
+            <elementRef key="location"/>
           </alternate>
           <elementRef key="note" minOccurs="0"/>
         </interleave>
