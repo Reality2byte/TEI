@@ -28,8 +28,8 @@
       <sch:rule context="tei:model[ not( parent::tei:modelSequence ) ][ not( @predicate ) ]">
         <sch:let name="output" value="normalize-space( @output )"/>
         <sch:report test="following-sibling::tei:model [ not( @predicate )] [ normalize-space( @output ) eq $output ]">
-          There are 2 (or more) &lt;model> elements in this
-          &lt;<sch:value-of select="local-name(..)"/>> that have no
+          There are 2 (or more) &lt;model&gt; elements in this
+          &lt;<sch:value-of select="local-name(..)"/>&gt; that have no
           predicate, but are targeted to the same output
           ("<sch:value-of select="( $output, parent::modelGrp/@output, 'all')[1]"/>").
         </sch:report>
@@ -45,8 +45,8 @@
         <sch:let name="predicate" value="normalize-space( @predicate )"/>
         <sch:let name="output" value="normalize-space( @output )"/>
         <sch:report test="following-sibling::tei:model [ normalize-space( @predicate ) eq $predicate ] [ normalize-space( @output ) eq $output ]">
-          There are 2 (or more) &lt;model> elements in this
-          &lt;<sch:value-of select="local-name(..)"/>> that have
+          There are 2 (or more) &lt;model&gt; elements in this
+          &lt;<sch:value-of select="local-name(..)"/>&gt; that have
           the same predicate, and are targeted to the same output
           ("<sch:value-of select="( $output, parent::modelGrp/@output, 'all')[1]"/>").
         </sch:report>
@@ -276,7 +276,7 @@
       <datatype>
         <dataRef key="teidata.truthValue"/>
       </datatype>
-      <remarks versionDate="2016-02-23" xml:lang="en">
+      <remarks ident="model-attr.useSourceRendition-remarks" versionDate="2016-02-23" xml:lang="en">
         <p>If the <att>useSourceRendition</att> attribute is not specified, or has the value
             <val>false</val>, any renditional information specified in the source document should be
           ignored. </p>
@@ -298,7 +298,7 @@
           <desc versionDate="2015-08-21" xml:lang="en">the output is intended for presentation in a plain text format</desc>
         </valItem>
       </valList>
-      <remarks versionDate="2016-02-23" xml:lang="en">
+      <remarks ident="model-attr.output-remarks" versionDate="2016-02-23" xml:lang="en">
         <p>If the <att>output</att> attribute is not specified, this model is assumed to apply for all forms of output.</p>
       </remarks>
     </attDef>
@@ -388,7 +388,7 @@
       </elementSpec>
     </egXML>
   </exemplum>
-  <remarks versionDate="2015-08-21" xml:lang="en">
+  <remarks ident="model-remarks" versionDate="2015-08-21" xml:lang="en">
     <p>The intended output to be generated for a particular behaviour of a processing model may be
       documented in one or all of the three following ways. Firstly, the <att>cssClass</att>
       attribute may be used to specify the name of a CSS style in some associated CSS stylesheet
